@@ -1,0 +1,40 @@
+@import '../../../../styles/variables';
+.hostel-main-layout {
+  .head-container {
+    padding: 0rem 3rem;
+  }
+
+  &.light-mode {
+    .tab-name {
+      color: black;
+      &.Mui-selected {
+        border-color: $primary-dark;
+        border-bottom: 2px solid $primary-dark;
+      }
+    }
+  }
+}
+.icon {
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.hostel-tab-content {
+  position: relative;
+  border-bottom: 1px solid transparentize($primary-dark, 0.5) !important;
+  .MuiTabs-indicator {
+    display: none;
+  }
+}
+
+.hostel-main-layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+
+  .hostel-dropdown {
+    width: 15rem;
+  }
+}

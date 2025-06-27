@@ -1,0 +1,7 @@
+[
+  { "label": "Food", "value": "food" },
+  { "label": "Maintanence", "value": "maintanence" },
+  { "label": "Infrastruture", "value": "infrastruture" },
+  { "label": "Utilities", "value": "utilities" },
+  { "label": "Harasment", "value": "harasment" }
+]

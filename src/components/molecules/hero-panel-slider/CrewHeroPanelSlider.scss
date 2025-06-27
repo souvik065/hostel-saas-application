@@ -1,0 +1,88 @@
+@import '../../../styles/variables';
+
+
+.slider {
+  position: relative;
+}
+
+.slider-content {
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 30rem !important;
+  min-width: 30rem!important;
+  width:100% !important;
+  border-radius: 2rem;
+
+
+}
+.overlay {
+  position: relative;
+  height: 30rem;
+  background: linear-gradient(to right, $primary-dark, transparentize($primary-dark, 0.5));
+  color: $primary-light;
+  padding: 3rem;
+  $border: 0.3rem;
+  border-radius: 2rem;
+  padding-top: 10rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(
+      60deg,
+      transparentize($primary-light, 0.5) 10%,
+      $primary-dark 80%,
+      transparentize($primary-light, 0.5) 100%
+    );
+  }
+
+  .button1,
+  .button2 {
+    width: 8rem;
+    border: 0.13rem solid $primary-light;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.3rem;
+    margin-top: 2rem;
+
+    &.button1 {
+      color: $primary-dark;
+      background-color: $primary-light;
+      box-shadow: 0rem 0rem 0.5rem 0rem $tertiary-dark;
+    }
+
+    &.button2 {
+      background-color: transparent;
+      font-size: 0.9rem;
+    }
+  }
+}
+.carousel-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  .carousel-button {
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 0.13rem solid $primary-light !important;
+    border-radius: 50% !important;
+    margin: 0 0.3rem !important ;
+    background-color: transparentize($primary-dark, 0.5) !important;
+    cursor: pointer !important;
+
+    &.active {
+      background-color: $primary-light !important;
+      border: 0.13rem solid $primary-dark !important;
+    }
+  }
+}

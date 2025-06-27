@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.MuiTab-root {
+  text-transform: capitalize;
+  color: $primary-dark;
+}
+
+.dark-mode {
+  .MuiTab-root {
+    text-transform: capitalize;
+    color: $primary-light;
+    font-size: 1rem;
+    &.Mui-selected {
+      border-color: $tertiary-dark !important;
+      border-bottom: 0.25rem solid $tertiary-dark !important;
+      color: $primary-light;
+      font-weight: bold;
+    }
+  }
+  .MuiTabs-indicator {
+    background-color: $tertiary-dark !important ;
+  }
+}
+.light-mode {
+  .MuiTab-root {
+    text-transform: capitalize;
+    color: $primary-dark;
+    font-size: 1rem;
+    &.Mui-selected {
+      border-color: $primary-dark !important;
+      border-bottom: 0.25rem solid $primary-dark !important;
+      color: $primary-dark;
+      font-weight: bold;
+    }
+  }
+  .MuiTabs-indicator {
+    background-color: $primary-dark !important ;
+  }
+}

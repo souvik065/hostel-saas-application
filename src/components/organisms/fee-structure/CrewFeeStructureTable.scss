@@ -1,0 +1,160 @@
+@import '../../../styles/variables';
+
+.fees-structre-table {
+  &.container {
+    position: relative;
+  }
+  table {
+    width: 100%;
+    table-layout: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    border-collapse: separate !important;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  /* Make first three columns sticky */
+  thead .column-sticky,
+  thead .column-sticky {
+    position: sticky;
+    z-index: 3; /* Increase z-index to ensure these columns stay above other columns */
+  }
+
+  /* Ensure content of sticky columns stays visible when scrolling */
+
+  /* Adjust left position for each column */
+  thead .first-col,
+  thead .first-col {
+    left: 0;
+  }
+
+  thead .second-col,
+  thead .second-col {
+    left: 5.2rem; /* Adjust as needed based on the width of Column 1 */
+  }
+
+  thead .third-col,
+  thead .third-col {
+    left: 10.4rem; /* Adjust as needed based on the width of Column 1 and Column 2 */
+  }
+
+  thead .fourth-col,
+  thead .fourth-col {
+    left: 15.875rem;
+  }
+  thead .fivth-col,
+  thead .fivth-col {
+    left: 20.9rem;
+  }
+
+  thead .edit,
+  thead .edit {
+    right: 0rem;
+  }
+
+  tbody .column-sticky,
+  tbody .column-sticky {
+    position: sticky;
+    z-index: 3; /* Increase z-index to ensure these columns stay above other columns */
+  }
+  /* Adjust left position for each column */
+  tbody .first-col,
+  tbody .first-col {
+    left: 0;
+  }
+
+  tbody .second-col,
+  tbody .second-col {
+    left: 5.2rem; /* Adjust as needed based on the width of Column 1 */
+  }
+
+  tbody .third-col,
+  tbody .third-col {
+    left: 10.4rem; /* Adjust as needed based on the width of Column 1 and Column 2 */
+  }
+
+  tbody .fourth-col,
+  tbody .fourth-col {
+    left: 15.875rem; /* Adjust as needed based on the width of Column 1 and Column 2 */
+  }
+  tbody .fivth-col,
+  tbody .fivth-col {
+    left: 20.9rem;
+    z-index: 10;
+  }
+  tbody .edit,
+  tbody .edit {
+    right: 0rem;
+  }
+
+  .column-width {
+    width: 4.683rem;
+  }
+  .light-mode {
+    th,
+    td {
+      border: 0.063rem solid $primary-dark;
+      color: $primary-dark;
+    }
+    th {
+      background-color: $primary-light;
+      color: $primary-dark;
+    }
+    /* Ensure content of sticky columns stays visible when scrolling */
+    tbody td:nth-child(-n + 5) {
+      background-color: $primary-light;
+      color: $primary-dark;
+    }
+    tbody .column-sticky,
+    tbody .column-sticky {
+      border: 0.063rem solid $primary-dark !important;
+    }
+
+    /* Ensure content of sticky columns stays visible when scrolling */
+    tbody td:nth-child(-n + 5) {
+      background-color: $primary-light;
+    }
+    tbody .edit,
+    tbody .edit {
+      background-color: $primary-light;
+    }
+  } //light mode end
+
+  .dark-mode {
+    th,
+    td {
+      border: 0.063rem solid $primary-light;
+      background-color: transparentize($color: $secondary-dark, $amount: 0.8);
+      color: $primary-light;
+    }
+    th {
+      background-color: transparentize($color: $secondary-dark, $amount: 0.8);
+      color: $primary-light;
+    }
+    /* Ensure content of sticky columns stays visible when scrolling */
+    thead td:nth-child(-n + 5) {
+      background-color: darken($secondary-dark, 10%);
+    }
+    tbody td:nth-child(-n + 5) {
+      background-color: darken($secondary-dark, 10%);
+    }
+    thead .column-sticky,
+    thead .column-sticky {
+      background-color: darken($secondary-dark, 10%);
+    }
+    tbody .column-sticky,
+    tbody .column-sticky {
+      background-color: darken($secondary-dark, 10%);
+    }
+    tbody td,
+    th {
+      background-color: transparentize($color: $secondary-dark, $amount: 0.9);
+    }
+    thead .column-sticky {
+      background-color: darken($secondary-dark, 10%);
+    }
+  } //dark mode end
+}

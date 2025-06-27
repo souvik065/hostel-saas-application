@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins, sans-serif';
+
+
+  &.font-size-small{
+    .MuiFormControlLabel-label {
+      font-size: small;
+    }
+  }
+
+  &.font-size-medium{
+    .MuiFormControlLabel-label {
+      font-size: medium;
+    }
+  }
+
+  &.font-size-extrasmall{
+    .MuiFormControlLabel-label {
+      font-size: x-small;
+    }
+  }
+
+
+
+  &.dark-mode {
+    .MuiFormControlLabel-label {
+      // font-family: 'Poppins, sans-serif'; 
+      cursor: pointer;  
+    }
+
+    .checkbox {
+      &.Mui-checked {
+        color: $primary-light;
+      }
+    }
+  }
+
+  &.light-mode {
+  .MuiFormControlLabel-label {
+    cursor: pointer;
+  }
+
+  .checkbox {
+    &.Mui-checked {
+      color: $primary-dark;
+    }
+  }
+}
+}

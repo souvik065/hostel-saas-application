@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.light-mode.dialog-wrap {
+  background-color: $primary-light !important;
+}
+
+.link-dark-mode {
+  color: $primary-dark;
+}
+
+.link-light-mode {
+  color: $primary-light;
+}

@@ -1,0 +1,166 @@
+
+@import '../../../styles/variables';
+@import '../../../styles/breakpoints';
+
+.nav-top {
+    background: $secondary-dark;
+    order: 2;
+    font-size: 2rem;
+
+    @include lg-breakpoint {
+        order: 0;
+        justify-content: flex-start;
+
+        .transparent & {
+            border-color: transparent;
+        }
+    }
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 152rem;
+    margin: auto;
+
+    @include lg-breakpoint {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @include xl-breakpoint {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+.nav-top-inner {
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-light;
+
+    @include lg-breakpoint {
+        padding: 0;
+        order: 0;
+    }
+}
+
+.notification {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+
+    @include lg-breakpoint {
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 61rem;
+    }
+
+    a {
+        text-decoration: underline;
+        color: currentColor;
+        font-weight: bold;
+        transition: opacity 0.3s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: currentColor;
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+    }
+
+    .discount-text {
+        color: $tertiary-dark;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .nav-button {
+        margin-left: 0.5rem;
+        background-color: $tertiary-dark;
+        color: $primary-light;
+        font-weight: bold;
+        font-size: 1.3rem;
+        border: 0.3rem;
+        padding: 0.8rem 1.3rem;
+        border-radius: 0.4rem;
+        box-shadow:  0 0 0.6rem 0 $tertiary-dark;
+        cursor: pointer;
+    
+        &:hover{
+            box-shadow: 0 0 0.6rem 0 $primary-light ;
+        }
+        &:focus,
+        &:active {
+            background-color: $tertiary-dark;
+        }
+    }
+}
+
+.subnav-items {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+
+    .nav-link {
+        svg {
+            font-size: 1.4rem;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        &:before {
+            display: none !important;
+        }
+
+        @include lg-breakpoint {
+            padding: 1.2rem 1.4rem !important;
+        }
+    }
+}
+
+@include lg-breakpoint {
+    .subnav-items{
+    display: flex;
+    }
+}
+
+.nav-item:last-child {
+    .nav-link {
+        @include lg-breakpoint {
+            padding-right: 0 !important;
+        }
+    }
+
+.nav-link {
+    svg {
+        font-size: 1.4rem;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    &:before {
+        display: none !important;
+    }
+
+    @include lg-breakpoint {
+        padding: 1.2rem 1.4rem !important;
+    }
+}
+}

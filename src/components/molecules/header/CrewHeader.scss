@@ -1,0 +1,129 @@
+@import '../../../styles/variables';
+@import '../../../styles//breakpoints';
+
+@mixin getBorderColor($radius, $type, $color) {
+  border: $radius $type $color;
+}
+
+@mixin getDispayAndJustifyContent($displayValue, $justifyValue) {
+  display: $displayValue;
+  justify-content: $justifyValue;
+}
+
+@mixin getHeightAndWidth($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+.crew-header {
+  height: 4rem;
+  padding: 1rem;
+
+  &.dark-mode {
+    &.mobile {
+      background-color: $primary-dark;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .crew-header-icon-bars {
+      @include getBorderColor(0.063rem, solid, transparentize($primary-dark, 0.5));
+      @include getDispayAndJustifyContent(flex, center);
+      @include getHeightAndWidth(2rem, 2rem);
+      color: $primary-light !important;
+    }
+
+    .crew-header-icon-search {
+      @include getHeightAndWidth(2rem, 2rem);
+      @include getBorderColor(0.063rem, solid, transparentize($primary-dark, 0.5));
+      @include getDispayAndJustifyContent(flex, center);
+      color: $primary-light !important;
+    }
+
+    .icon-button {
+      color: $primary-light !important;
+    }
+  }
+
+  &.light-mode {
+    border-radius: 2rem;
+
+    &.mobile {
+      background-color: $primary-light;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      box-shadow: 0rem 0rem 0.5rem 0rem transparentize($primary-dark, 0.5);
+    }
+
+    .crew-header-icon-bars {
+      @include getBorderColor(0.063rem, solid, $primary-dark);
+      @include getDispayAndJustifyContent(flex, center);
+      @include getHeightAndWidth(2rem, 2rem);
+      color: $primary-dark !important;
+    }
+
+    .icon-button {
+      color: $primary-dark !important;
+    }
+
+    .search-icon {
+      color: $primary-dark;
+    }
+  }
+}
+
+@include xs-breakpoint {
+  .crew-header {
+    height: 4.375rem;
+    border: none !important;
+  }
+}
+
+@include md-range {
+  .crew-header {
+    height: 4.375rem;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  padding: 1rem;
+  .header-main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .content1 {
+      display: flex;
+      align-items: center;
+      .select-wrapper {
+        min-width: 15.625rem;
+      }
+    }
+    .content2 {
+      display: flex;
+      align-items: center;
+      .link-bell {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.crew-header-title-container {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  text-align: center;
+  &.dark-mode {
+    background-color: transparentize($primary-light, 0.8);
+  }
+  &.light-mode {
+    background-color: $primary-light;
+    box-shadow: 0rem 0rem 0.5rem 0rem transparentize($primary-dark, 0.5);
+  }
+}

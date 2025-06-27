@@ -1,0 +1,80 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+
+$SIDE_NAV_WIDTH: 280px;
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+
+  &.dark-mode {
+    background: radial-gradient(82.78% 66.53% at 45.42% 35.56%, $secondary-dark 0%, #001a5c 48.22%, $primary-dark 100%);
+  }
+
+  &.light-mode {
+    background-color: $primary-light;
+  }
+
+  .main {
+    position: absolute;
+    left: 20%;
+    width: calc(100% - 20%);
+    display: flex;
+    transition: 0.5s;
+
+    .content {
+      &.dark-mode {
+        background-color: transparentize($primary-light, 0.8);
+      }
+
+      &.light-mode {
+        background-color: $primary-light;
+        box-shadow: 0px 0px 0.5rem 0px transparentize($primary-dark, 0.5);
+      }
+    }
+
+    .app-container-children {
+      margin: 0.5rem;
+      overflow-y: auto;
+      max-height: calc(100vh - 10rem);
+      min-height: 85vh;
+      border-radius: 1rem;
+      &::-webkit-scrollbar {
+        width: 0.5rem !important;
+      }
+
+      &.dark-mode {
+        background-color: transparentize($primary-light, 0.8);
+      }
+
+      &.light-mode {
+        background-color: $primary-light;
+        box-shadow: 0px 0px 0.5rem 0px transparentize($primary-dark, 0.5);
+      }
+
+      .app-container-main {
+        padding: 2rem;
+        border-radius: 2rem;
+
+
+        z-index: 1;
+
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 900px) {
+//   /* SM and XS screen */
+//   .main {
+//     left: 0% !important;
+//     width: 100% !important;
+//   }
+// }
+
+@include sm-xs-breakpoint {
+  .main {
+    left: 0% !important;
+    width: 100% !important;
+  }
+}

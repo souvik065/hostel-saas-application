@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+/* DatePicker.scss or your CSS file */
+.date-picker-container {
+  position: relative; /* Set the container position to relative */
+  .crew-icon.dark-mode {
+    color: $primary-dark !important;
+}
+}
+
+.date-picker-calendar {
+  position: absolute;
+  top: 100%; /* Position the calendar below the input field */
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+  display: none; /* Initially hide the calendar */
+}
+
+.date-picker-container.open .date-picker-calendar {
+  display: block; /* Show the calendar when the container has 'open' class */
+}

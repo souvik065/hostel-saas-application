@@ -1,0 +1,125 @@
+[
+  {
+    "buildingId": "1a2b3c4d",
+    "floors": [
+      {
+        "id": "5b53da8d-bf2f-40a2-8776-de1c361c595b",
+        "floorName": "Floor A2",
+        "isActive": true,
+        "createdBy": "dc0a06ab-f3a8-4732-bb3b-4fbda4a61555",
+        "createdAt": "2023-12-12T05:38:50.676843Z"
+      },
+      {
+        "id": "d72643cc-2797-442f-9571-1a22bb27e465",
+        "floorName": "Floor A1",
+        "isActive": true,
+        "createdBy": "dc0a06ab-f3a8-4732-bb3b-4fbda4a61555",
+        "createdAt": "2023-12-12T05:38:50.620307Z"
+      },
+      {
+        "id": "d72643cc-2797-0230-9571-1a22bb27e465",
+        "floorName": "Floor A3",
+        "isActive": true,
+        "createdBy": "dc0a06ab-f3a8-4732-bb3b-4fbda4a61555",
+        "createdAt": "2023-12-12T05:38:50.620307Z"
+      },
+      {
+        "id": "d72643cc-3209-442f-9571-1a22bb27e465",
+        "floorName": "Floor A4",
+        "isActive": true,
+        "createdBy": "dc0a06ab-f3a8-4732-bb3b-4fbda4a61555",
+        "createdAt": "2023-12-12T05:38:50.620307Z"
+      }
+    ]
+  },
+  {
+    "buildingId": "e5f6g7h8",
+    "floors": [
+      {
+        "id": "abc456",
+        "floorName": "Floor B1",
+        "isActive": true,
+        "createdBy": "user123",
+        "createdAt": "2023-12-13T09:30:00.123Z"
+      },
+      {
+        "id": "def789",
+        "floorName": "Floor B2",
+        "isActive": true,
+        "createdBy": "user456",
+        "createdAt": "2023-12-13T10:45:00.456Z"
+      },
+      {
+        "id": "laasnakl9301",
+        "floorName": "Floor B3",
+        "isActive": true,
+        "createdBy": "user456",
+        "createdAt": "2023-12-13T10:45:00.456Z"
+      },
+      {
+        "id": "930239xsk3920",
+        "floorName": "Floor B4",
+        "isActive": true,
+        "createdBy": "user456",
+        "createdAt": "2023-12-13T10:45:00.456Z"
+      }
+    ]
+  },
+  {
+    "buildingId": "9i8j7k6l",
+    "floors": [
+      {
+        "id": "uvw012",
+        "floorName": "Floor C1",
+        "isActive": true,
+        "createdBy": "user789",
+        "createdAt": "2023-12-14T08:15:00.789Z"
+      },
+      {
+        "id": "xyz345",
+        "floorName": "Floor C2",
+        "isActive": true,
+        "createdBy": "user012",
+        "createdAt": "2023-12-14T11:30:00.012Z"
+      }
+    ]
+  },
+  {
+    "buildingId": "m5n4o3p2",
+    "floors": [
+      {
+        "id": "opq789",
+        "floorName": "Floor D1",
+        "isActive": true,
+        "createdBy": "user345",
+        "createdAt": "2023-12-15T07:45:00.345Z"
+      },
+      {
+        "id": "rst012",
+        "floorName": "Floor D2",
+        "isActive": true,
+        "createdBy": "user678",
+        "createdAt": "2023-12-15T09:00:00.678Z"
+      }
+    ]
+  },
+  {
+    "buildingId": "q1r2s3t4",
+    "floors": [
+      {
+        "id": "xyz234",
+        "floorName": "Floor E1",
+        "isActive": true,
+        "createdBy": "user901",
+        "createdAt": "2023-12-16T06:00:00.901Z"
+      },
+      {
+        "id": "abc567",
+        "floorName": "Floor E2",
+        "isActive": true,
+        "createdBy": "user234",
+        "createdAt": "2023-12-16T08:30:00.234Z"
+      }
+    ]
+  }
+]

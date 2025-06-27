@@ -1,0 +1,73 @@
+@import '../../../styles/variables';
+
+.file-upload-container {
+  .file-upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .file-upload-button {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 1rem;
+    .file-button-text {
+      justify-content: center;
+    }
+  }
+  .file-upload-files {
+    display: flex;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .file-content {
+      position: relative;
+      width: 9.375rem;
+      height: 9.375rem;
+      overflow: hidden;
+    }
+  }
+  .file-input {
+    display: none;
+  }
+
+  .upload-btn {
+    align-items: center;
+    justify-content: center;
+  }
+  .img-content {
+    position: relative;
+    width: 9.375rem;
+    height: 9.375rem;
+    overflow: hidden;
+  }
+  &.dark-mode {
+    .file-upload-wrapper {
+      border: 0.0625rem dashed $primary-light;
+    }
+    .file-upload-button {
+      border: 0.0625rem dashed $primary-light;
+    }
+    .file-content {
+      border: 0.0625rem solid $primary-light;
+    }
+  }
+  &.light-mode {
+    .file-upload-wrapper {
+      border: 0.0625rem dashed $primary-dark;
+    }
+    .file-upload-button {
+      border: 0.0625rem dashed $primary-dark;
+    }
+    .file-content {
+      border: 0.0625rem solid $primary-dark;
+    }
+  }
+}

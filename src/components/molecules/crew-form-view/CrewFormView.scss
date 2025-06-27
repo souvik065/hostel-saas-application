@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+.view-section-container {
+  width: 100%;
+
+  border-radius: 1rem;
+
+  .view-section-title {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .view-section-value {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .divider {
+    height: 3rem;
+  }
+  &.dark-mode {
+    border: 0.0625rem solid $primaryDarkButton;
+    > .view-section-detail:not(:last-child) {
+      border-bottom: 0.0625rem solid $primaryDarkButton;
+    }
+    .divider {
+      border-color: $primaryDarkButton !important;
+    }
+  }
+
+  &.light-mode {
+    border: 0.0625rem solid $primary-dark;
+    > .view-section-detail:not(:last-child) {
+      border-bottom: 0.0625rem solid $primary-dark;
+    }
+    .divider {
+      border-color: $primary-dark !important;
+    }
+  }
+}

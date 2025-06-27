@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+@mixin getBorderColor($radius, $type, $color) {
+  border: $radius $type $color;
+}
+
+.table-head-container {
+  height: 2rem;
+  .MuiTableRow-root {
+    @include getBorderColor(1px, solid, $customGray-main);
+  }
+  .MuiTableCell-root {
+    @include getBorderColor(1px, solid, $customGray-main);
+  }
+}

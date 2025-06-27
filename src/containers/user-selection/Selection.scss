@@ -1,0 +1,13 @@
+.container{
+
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .user-selection{
+        width: 20rem;
+    }
+}

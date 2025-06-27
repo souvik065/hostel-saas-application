@@ -1,0 +1,41 @@
+[
+    {
+      "title": "Company",
+      "links": [
+        { "name": "About", "url": "/about", "target": "" },
+        { "name": "Careers", "url": "/careers", "target": "_blank" }
+      ],
+      "type": "link"
+    },
+    {
+      "title": "Get Help",
+      "links": [
+        { "name": "Payment Options", "url": "/payment-options", "target": "_blank" },
+        { "name": "Integrations", "url": "/integrations", "target": "_blank" },
+        { "name": "Customer Stories", "url": "/customer-stories", "target": "_blank" },
+        { "name": "Blog", "url": "/blog", "target": "_blank" }
+      ],
+      "type": "link"
+    },
+    {
+      "title": "Other",
+      "links": [
+        { "name": "Advanced Billing", "url": "/advance", "target": "" },
+        { "name": "Expense Amortization", "url": "/expense", "target": "" },
+        { "name": "Customer Stories", "url": "/customer-stories", "target": "" },
+        { "name": "API Documentations", "url": "/api-documents", "target": "" }
+      ],
+      "type": "link"
+    },
+    {
+      "title": "Follow Us",
+      "links": [
+        { "name": "Facebook", "url": "https://facebook.com", "target": "" },
+        { "name": "Twitter", "url": "https://twitter.com", "target": "" },
+        { "name": "Instagram", "url": "https://instagram.com", "target": "" },
+        { "name": "LinkedIn", "url": "https://linkedin.com", "target": "_blank" }
+      ],
+      "type": "iconLink"
+    }
+  ]
+  

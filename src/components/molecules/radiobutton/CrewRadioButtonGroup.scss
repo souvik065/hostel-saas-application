@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+.radio-field-error {
+  color: $error !important;
+}
+
+.radiobutton-header {
+  &.ligh-mode {
+    color: $primary-dark;
+  }
+
+  &.dark-mode {
+    color: $primary-light;
+  }
+}

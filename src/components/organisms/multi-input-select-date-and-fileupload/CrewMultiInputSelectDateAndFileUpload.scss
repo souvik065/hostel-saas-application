@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.section-row {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.dark-mode.section-row {
+  border: 1px solid $primary-light;
+}
+.light-mode.section-row {
+  border: 1px solid;
+}

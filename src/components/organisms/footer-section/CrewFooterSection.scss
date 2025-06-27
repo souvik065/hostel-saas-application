@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+.footer-main-container{
+  width: 100%;
+  background-color: $primary-dark;
+  display: inline-block;
+.footer-items{
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+.dark-mode {
+    color: $primary-light;
+  }
+  .light-mode {
+    color: $primary-dark;
+  }
+    .divider{
+    background-color: $tertiary-dark;
+    }
+    .bottom-nav{
+        background-color: $primary-dark;
+        color: $primary-light !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 2rem;
+    }
+}

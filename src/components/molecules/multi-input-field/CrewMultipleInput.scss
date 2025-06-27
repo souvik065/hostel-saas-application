@@ -1,0 +1,15 @@
+.icon-container {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .btn {
+    width: 6.25rem;
+  }
+}

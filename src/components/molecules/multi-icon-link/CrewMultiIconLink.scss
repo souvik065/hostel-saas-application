@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+.icon-link-main-container {
+  margin: 0.1rem;
+  padding-bottom: 1.1rem;
+  color: $primary-light !important;
+  background-color: $primary-dark;
+
+  .icon-link-items-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    margin: 0.3rem;
+  }
+
+  .icon-title{
+    padding-top: 1.2rem;
+  }
+
+  .social-media-buttons {
+    display: flex; 
+   }
+
+  .link-icon {
+    font-size: 1.3rem;
+    color: $primary-dark-text !important;
+
+    .dark-mode {
+      color: $primary-dark !important;
+      text-decoration: none;
+    }
+    .light-mode {
+      color: $primary-light !important;
+      text-decoration: none;
+    }
+  }
+
+}

@@ -1,0 +1,136 @@
+@import '../../../styles/variables';
+
+.login-main-container {
+  height: 100vh;
+  overflow-y: auto;
+
+  .copyright-text {
+    font-size: 0.75rem;
+    font-weight: 100;
+    &dark-mode {
+      color: $primary-dark-text;
+    }
+    &light-mode {
+      color: $primary-light-text;
+    }
+  }
+
+  .privacy-policy {
+    .crew-typography {
+      font-size: 0.75rem;
+      font-weight: 100;
+
+      &:hover {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &.dark-mode {
+    background-color: $primary-dark;
+  }
+
+  &.light-mode {
+    background-color: $primary-light;
+  }
+
+  .krewbee-logo {
+    position: relative !important;
+    height: 4rem !important;
+    transform: scale(2);
+  }
+
+  .container {
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    margin: auto;
+    display: table;
+    position: relative;
+    top: 10%;
+
+    .save-my-login {
+      padding-left: 1.563rem;
+    }
+
+    .forgot-section {
+      display: flex;
+      align-items: flex-end;
+      cursor: pointer;
+
+      .MuiGrid-root {
+        .forgot-password {
+          .crew-typography {
+            font-size: 0.75rem;
+            font-weight: 100;
+            color: $primary-light;
+
+            &:hover {
+              font-weight: 400;
+            }
+
+          }
+        }
+      }
+    }
+
+    &.dark-mode {
+      // background-color: $info-dark;
+      background: linear-gradient(33deg,
+          $primary-dark 10%, $secondary-dark 40%, $secondary-dark 40%, $primary-dark 95%);
+      box-shadow: 0px 0px 0.5rem 0px transparentize($primary-light, 0.8);
+
+      .form-container {
+        padding: 1.563rem 1.875rem;
+
+        .crew-button {
+          font-weight: 800;
+        }
+      }
+
+      .forgot-section {
+        color: $primary-dark-text;
+      }
+
+      .sociallink-section {
+        padding: 1.563rem 1.875rem;
+      }
+
+      .copyright-text {
+        color: $primary-light;
+      }
+    }
+
+    &.light-mode {
+      background-color: $primary-light;
+      box-shadow: 0px 0px 0.5rem 0px transparentize($primary-light, 0.5);
+
+      .form-container {
+        padding: 1.563rem 1.875rem;
+
+        .crew-button {
+          font-weight: 800;
+        }
+      }
+
+      .forgot-section {
+        color: $primary-light-text;
+      }
+
+      .sociallink-section {
+        padding: 1.563rem 1.875rem;
+      }
+
+      .copyright-text {
+        color: $primary-dark;
+      }
+    }
+
+
+
+    input::placeholder {
+      font-Family: 'Poppins', sans-serif;
+      font-Size: 14;
+      color: $primary-light;
+    }
+  }
+}

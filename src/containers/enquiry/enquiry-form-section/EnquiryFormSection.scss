@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+.form-section {
+  padding: 0.5rem;
+}
+.warning {
+  color: $warning;
+}
+.error {
+  color: $error;
+}
+.notfound {
+  color: $warning;
+}
+
+.modal-footer-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  .content {
+    width: 15rem;
+  }
+
+  .MuiButtonBase-root {
+    font-weight: 700;
+    font-size: large;
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../../styles/variables';
+
+.card {
+  display: flex !important ;
+  align-items: center;
+  flex-direction: column !important;
+  width: 100%;
+  height: 95%;
+  max-width: 30rem;
+  position: relative;
+  padding: 10% 2rem;
+  box-sizing: border-box;
+  $border: 0.2rem;
+  color: $primary-light;
+  background: $primary-dark;
+  background-clip: padding-box; /* !importanté */
+  border-radius: 3rem;
+  border-image: linear-gradient(
+    60deg,
+    transparentize($primary-light, 0.5) 10%,
+    $primary-dark 80%,
+    transparentize($primary-light, 0.5) 100%
+  );;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(
+      60deg,
+      transparentize($primary-light, 0.5) 10%,
+      $primary-dark 80%,
+      transparentize($primary-light, 0.5) 100%
+    );;
+  }
+}
+ 
+  .title {
+    font-size: 1rem !important;
+    margin-top: 8rem !important;
+    color: $primary-light;
+    position: relative !important;
+    margin-bottom: 3rem !important;
+    top: 3rem !important;
+    //left: 1.3rem !important;
+  }
+  
+  .button {
+    background-color:$primary-light !important ;
+    color: $primary-dark !important;
+    margin-top: 6rem !important;
+    padding: 1.1rem 1.1rem !important;
+    border-radius: 0.9rem !important;
+    border: 0.3rem !important;
+    box-shadow: 0 0 2rem 0 $tertiary-dark;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative !important;
+  }

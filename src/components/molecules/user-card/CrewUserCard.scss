@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+@mixin displayFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card {
+  @include displayFlex();
+  height: 7rem;
+  border-radius: 1.5rem;
+  &.dark-mode {
+    background-color: $info-light;
+  }
+  &.light-mode {
+    background-color: $primary-contrastText;
+  }
+  .card {
+    padding: 1rem;
+  }
+}
+
+.user-detail {
+  @include displayFlex();
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(3.125rem);
+  max-height: 75%;
+  overflow-y: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-width: 55rem;
+
+  &.dark-mode {
+    border:  0.125rem solid transparentize($primary-light, 0.3);
+    background-color: transparentize($primary-light, 0.8);
+  }
+
+  &.light-mode {
+    background-color: $primary-light;
+  }
+}

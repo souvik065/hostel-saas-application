@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.crew-icon {
+  color: inherit;
+
+  &.size-small{
+    height: 0.5rem;
+  }
+ 
+  &.size-regular{
+    height: 1rem;
+  }
+
+  &.size-medium{
+    height: 1.5rem;
+  }
+
+  &.size-large{
+    height: 2.5rem;
+  }
+
+  &.dark-mode {
+    color: $primary-contrastText;
+  }
+  &.light-mode {
+    color: $customBlack-main;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../../styles/variables';
+
+.textbox-container {
+  .text-box {
+    border-radius: 1.5rem !important;
+    padding: 1rem 1.5rem !important;
+    width: 100%;
+  }
+
+  .textbox-label {
+    font-weight: bold;
+  }
+
+  .input-error {
+    border: 1px solid $error !important;
+  }
+  .input-field-error {
+    color: $error !important;
+  }
+
+  &.dark-mode {
+    &.input-error {
+      box-shadow: none !important;
+    }
+    .textbox-label {
+      color: $primary-light;
+      font-weight: bold;
+    }
+
+    .MuiOutlinedInput-root {
+      border: 0.063rem $primary-light solid;
+    }
+
+    .MuiOutlinedInput-input {
+      &::placeholder {
+        color: $primary-light !important;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 1rem 0px transparentize($primary-light, 0.5) !important;
+      }
+    }
+  }
+
+  &.light-mode {
+    .MuiInputBase-root {
+      &:hover {
+        box-shadow: 0px 0px 1rem 0px transparentize($primary-dark, 0.5) !important;
+      }
+
+      &:focus-within {
+        border: 0.16rem solid $primary-dark !important;
+      }
+    }
+
+    .textbox-label {
+      color: $primary-dark;
+      font-weight: bold;
+    }
+
+    &.input-error {
+      box-shadow: none !important;
+    }
+
+    .MuiOutlinedInput-input {
+      &::placeholder {
+        color: $primary-dark !important;
+      }
+    }
+
+    .MuiOutlinedInput-root {
+      border: 0.063rem $primary-dark solid;
+    }
+  }
+}

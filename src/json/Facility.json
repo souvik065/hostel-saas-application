@@ -1,0 +1,15 @@
+[
+  {
+    "id": "e2c2b53c-8ff0-4d70-b81b-f6a6f83e03f5",
+    "name": "GymR",
+    "cost": 1000.0,
+    "description": "Gym Access for a month",
+    "isActive": true,
+    "createdBy": "dc0a06ab-f3a8-4732-bb3b-4fbda4a61555",
+    "createdAt": "2023-12-12T05:40:38.290253Z",
+    "hostelId": "437c5857-b981-4450-859b-2fb3d40a76",
+    "buildingId": null,
+    "floorId": null,
+    "roomId": null
+  }
+]

@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+
+.crewPaper {
+  border-radius: 1.5rem;
+  &.dark-mode {
+    background-color: $info-light;
+  }
+  &.light-mode {
+    background-color: $primary-contrastText;
+    border: 0.063rem solid $primary-main;
+  }
+}

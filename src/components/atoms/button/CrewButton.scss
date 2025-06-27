@@ -1,0 +1,190 @@
+@import '../../../styles/variables';
+
+.crew-button {
+  width: 100%;
+  height: 2.5rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0.5rem !important;
+  border: none !important;
+
+  &.size-small {
+    width: 6.25rem;
+  }
+
+  &.size-medium {
+    width: 9.375rem;
+  }
+
+  &.size-large {
+    width: 12.5rem;
+  }
+
+  &.full-width {
+    width: 100%;
+    height: 3rem !important;
+  }
+
+  .crew-button-circular {
+    color: inherit;
+  }
+
+  .crew-button-field {
+    padding: 0.25rem;
+  }
+
+  .crew-button-icon {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  &.crew-light-mode-button {
+    background-color: $secondary-main;
+    color: $primary-contrastText;
+  }
+
+  &.text {
+    &.dark-mode {
+      background-color: transparent;
+      color: $primary-light;
+    }
+
+    &.light-mode {
+      background-color: transparent;
+      color: $primary-dark;
+    }
+  }
+
+  &.outlined {
+    &.dark-mode {
+      background-color: transparent;
+      color: $secondary-main;
+      border: 0.063rem solid $primary-light;
+    }
+
+    &.light-mode {
+      background-color: transparent;
+      color: $primary-main;
+      border: 0.063rem solid $primary-dark;
+    }
+  }
+
+  &.contained {
+    border-radius: 0.5rem;
+
+    &.dark-mode {
+      background-color: $primary-light;
+      color: $primary-dark;
+    }
+
+    &.light-mode {
+      background-color: $primary-dark;
+      color: $primary-light;
+    }
+  }
+
+  &.logoutContained {
+    border-radius: 0.5rem;
+
+    &.dark-mode {
+      background-color: $primary-light;
+      color: $primary-dark;
+    }
+
+    &.light-mode {
+      background-color: $primary-dark;
+      color: $primary-light;
+    }
+  }
+
+  &.switchContained {
+    border-radius: 0.5rem;
+
+    &.dark-mode {
+      background-color: $info-light;
+      color: $primary-contrastText;
+    }
+
+    &.light-mode {
+      background-color: $primary-main;
+      color: $primary-contrastText;
+    }
+  }
+
+  &.stylebutton {
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 1.2rem !important;
+    border-bottom-left-radius: 1.2rem !important;
+
+    &.dark-mode {
+      background-color: $primary-light;
+      color: $primary-dark;
+      box-shadow: 0px 0px 0.5rem 0px transparentize($primary-light, 0.5);
+
+      &:hover {
+        box-shadow: 0px 0px 1rem 0px transparentize($primary-light, 0.5);
+      }
+    }
+
+    &.light-mode {
+      background-color: $primary-dark;
+      color: $primary-light;
+      box-shadow: 0px 0px 0.5rem 0px transparentize($primary-dark, 0.5);
+
+      &:hover {
+        box-shadow: 0px 0px 1rem 0px transparentize($primary-dark, 0.5);
+      }
+    }
+  }
+
+  &.primary {
+    border-radius: 0.5rem;
+    border-width: 1rem;
+    font-weight: bolder;
+
+    &.dark-mode {
+      background-color: $primary-light;
+      color: $primary-dark;
+      box-shadow: 0px 0px 0.5rem 0px transparentize($primary-light, 0.5);
+
+      &:hover {
+        box-shadow: 0px 0px 1rem 0px transparentize($primary-light, 0.5);
+      }
+    }
+
+    &.light-mode {
+      background-color: $primary-dark;
+      color: $primary-light;
+      box-shadow: 0px 0px 0.5rem 0px transparentize($primary-dark, 0.5);
+
+      &:hover {
+        box-shadow: 0px 0px 1rem 0px transparentize($primary-dark, 0.5);
+      }
+    }
+  }
+
+  &.transparent {
+    border-radius: 0.5rem;
+    font-weight: bolder;
+
+    &.dark-mode {
+      background-color: transparent;
+      color: $primary-light;
+      border: 0.13rem $primary-light solid !important;
+      &:hover {
+        box-shadow: 0px 0px 0.8rem 0px transparentize($primary-light, 0.5);
+      }
+    }
+
+    &.light-mode {
+      background-color: transparent;
+      color: $primary-dark;
+      border: 0.13rem $primary-dark solid !important;
+      &:hover {
+        box-shadow: 0px 0px 0.8rem 0px transparentize($primary-dark, 0.5);
+      }
+    }
+  }
+}

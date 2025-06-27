@@ -1,0 +1,38 @@
+@import '../../../styles/variables';
+
+.modal-head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title-container {
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  .close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .divider {
+    margin: 0rem -1rem;
+  }
+
+  &.dark-mode {
+    .close-icon {
+      color: $primary-light;
+    }
+    .divider {
+      border-color: $primary-light !important;
+    }
+  }
+
+  &.light-mode {
+    .divider {
+      border-color: $primary-dark !important;
+    }
+  }
+}

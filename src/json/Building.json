@@ -1,0 +1,59 @@
+[
+  {
+    "hostelId": "ec0177c8-2332-4fb9-9756-6b5b196e4460",
+    "buildings": [
+      {
+        "id": "1a2b3c4d",
+        "buildingName": "Tower A",
+        "isActive": true,
+        "createdBy": "user1",
+        "createdAt": "2023-12-12T08:00:00Z"
+      },
+      {
+        "id": "e5f6g7h8",
+        "buildingName": "Tower B",
+        "isActive": true,
+        "createdBy": "user2",
+        "createdAt": "2023-12-11T10:30:00Z"
+      }
+    ]
+  },
+  {
+    "hostelId": "bbc12772-b37f-4081-9c44-5338d00bffa4",
+    "buildings": [
+      {
+        "id": "9i8j7k6l",
+        "buildingName": "Block C",
+        "isActive": false,
+        "createdBy": "user3",
+        "createdAt": "2023-12-10T15:45:00Z"
+      },
+      {
+        "id": "m5n4o3p2",
+        "buildingName": "Block D",
+        "isActive": true,
+        "createdBy": "user4",
+        "createdAt": "2023-12-09T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "hostelId": "0c0ab5ea-007f-4dd2-955d-2dc96996e261",
+    "buildings": [
+      {
+        "id": "q1r2s3t4",
+        "buildingName": "Wing X",
+        "isActive": true,
+        "createdBy": "user5",
+        "createdAt": "2023-12-08T09:20:00Z"
+      },
+      {
+        "id": "u5v6w7x8",
+        "buildingName": "Wing Y",
+        "isActive": true,
+        "createdBy": "user6",
+        "createdAt": "2023-12-07T14:10:00Z"
+      }
+    ]
+  }
+]

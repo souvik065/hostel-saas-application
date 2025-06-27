@@ -1,0 +1,16 @@
+@import '../../../../styles/variables';
+
+.dark-mode {
+  .accordion-item {
+    background-color: transparentize($primary-light, 0.85);
+    backdrop-filter: blur(3.125rem);
+    box-shadow: 0rem 0rem 1.25rem 0rem $primary-dark;
+  }
+}
+
+.light-mode {
+  .accordion-item {
+    background-color: $primary-light;
+    box-shadow: 0rem 0rem 1.25rem 0rem $primary-dark;
+  }
+}

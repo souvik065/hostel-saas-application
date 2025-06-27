@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.crew-table-modal-paper {
+  padding: 1rem;
+  width: 8.5rem;
+  animation: slideFromRight 0.3s ease-in-out;
+  &.dark-mode {
+    background-color: $info-dark;
+  }
+  &.light-mode {
+    background-color: $primary-contrastText;
+    .table-modal-menu-item:hover {
+      background-color: $customGray-light;
+    }
+  }
+
+  .MuiMenuItem-root {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.75rem;
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+.footer-card-container {
+    margin: 0.1rem;
+    padding: 1rem 1rem 1rem  3.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2rem; 
+    background-color: $primary-dark; 
+    
+    .card-title{
+      color: $primary-light !important;
+      padding-left: 0.6rem;
+
+    }
+    .footer-card-links{
+        margin: 1rem;
+        align-items: center !important;
+        justify-content: center !important;
+        align-content: center !important;
+        .link-content {
+          .dark-mode {
+            color: $primary-dark !important;
+            text-decoration: none;
+              &:hover {
+                color: transparentize($primary-light, 0.2);
+              }
+          }
+          .light-mode {
+            color: $primary-dark-text !important;
+            text-decoration: none;
+              &:hover {
+                color: transparentize($primary-dark, 0.2);
+              }
+          }
+          
+        }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          margin-bottom: 0.5rem;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+  }

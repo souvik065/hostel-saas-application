@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+
+.table-name-container {
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+  // border-radius: 0.5rem;
+  // &.dark-mode {
+  //   background-color: $info-light;
+  // }
+
+  // &.light-mode {
+  //   background-color: $customGray-light;
+  // }
+
+  .table-name {
+    // padding-left: 1.4rem;
+    &.dark-mode {
+      color: $primary-contrastText;
+    }
+    .icon-right {
+      margin-left: 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .icon-left {
+      margin-right: 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  .divider {
+    width: 100%;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,164 @@
+@import '../../../styles/variables';
+
+.list-items {
+  &.dark-mode {
+    background-color: transparentize($primary-light, 0.85);
+    backdrop-filter: blur(3.125rem);
+    box-shadow: 0rem 0rem 1.25rem 0rem $primary-dark;
+    .MuiMenuItem-root{
+      &:hover {
+        background-color: transparentize($primary-dark, 0.85);
+      }
+      &:active {
+        background-color: transparentize($primary-dark, 0.85);
+      }
+    }
+    .Mui-selected {
+      background-color: transparentize($primary-dark, 0.85);
+      &:hover {
+        background-color: transparentize($primary-dark, 0.85);
+      }
+      &:active {
+        background-color: transparentize($primary-dark, 0.85);
+      }
+      .crew-typography {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &.light-mode {
+    background-color: $primary-light;
+    box-shadow: 0rem 0rem 1.25rem 0rem $primary-dark;
+    .MuiMenuItem-root{
+      &:hover {
+        background-color: transparentize($tertiary-dark, 0.5);
+      }
+      &:active {
+        background-color: transparentize($tertiary-dark, 0.5);
+      }
+    }
+    .Mui-selected {
+      background-color: $tertiary-dark;
+      &:hover {
+        background-color: transparentize($tertiary-dark, 0.5);
+      }
+      .crew-typography {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.MuiMenuItem-root {
+  &.light-mode {
+    color: $primary-dark !important;
+  }
+}
+
+.crew-select {
+  width: 100%;
+
+  &.dark-mode {
+    background-color: transparent;
+    color: $primary-light;
+    border-radius: 0.8rem;
+
+    &:hover {
+      box-shadow: 0px 0px 1rem 0px transparentize($primary-light, 0.5) !important;
+    }
+
+    .select-none-option {
+      opacity: 0.4;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-light !important;
+      border-radius: 0.8rem;
+      height: 2.8rem;
+    }
+
+    .MuiSelect-select {
+      padding: 9.5px 15px;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &.light-mode {
+    background-color: transparent;
+    color: $primary-dark;
+
+    &:hover {
+      box-shadow: 0px 0px 1rem 0px transparentize($primary-dark, 0.5) !important;
+    }
+
+    .MuiSvgIcon-root {
+      color: $primary-dark !important;
+    }
+
+    .select-none-option {
+      color: $primary-dark !important;
+      opacity: 0.4;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-dark !important;
+      border-radius: 0.5rem;
+      height: 2.8rem;
+    }
+
+    .MuiSelect-select {
+      padding: 9.5px 15px;
+      border-radius: 0.5rem;
+      color: $primary-dark;
+    }
+  }
+
+  &.error-light-mode {
+    background-color: $primary-light;
+    color: $primary-dark;
+
+    .select-none-option {
+      color: $primary-dark;
+      opacity: 0.4;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border: 1px solid $error;
+      border-radius: 0.5rem;
+      height: 3rem;
+    }
+
+    .MuiSelect-select {
+      padding: 10.5px 15px;
+      border-radius: 0.5rem;
+    }
+
+    .MuiSvgIcon-root {
+      color: $primary-dark !important;
+    }
+  }
+
+  &.error-dark-mode {
+    color: $primary-light;
+
+    .select-none-option {
+      opacity: 0.4;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border: 1px solid $error;
+      border-radius: 0.5rem;
+      height: 3rem;
+    }
+
+    .MuiSelect-select {
+      padding: 10.5px 15px;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.select-field-error {
+  color: $error;
+}

@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &.dark-mode {
+        color: $primary-light;
+    }
+
+    &.light-mode {
+        color: $primary-dark;
+    }
+}
+
+.multi-feature-card {
+    width: 100%;
+    display: flex;
+    max-height: 75%;
+    overflow-y: auto;
+    border-radius: 1rem;
+    min-width: 30rem;
+    justify-content: space-evenly;
+
+    &.dark-mode {
+        border: 0.125rem solid transparentize($primary-light, 0.3);
+        background-color: transparentize($primary-light, 0.8);
+    }
+
+    &.light-mode {
+        background-color: $primary-light;
+    }
+
+
+}

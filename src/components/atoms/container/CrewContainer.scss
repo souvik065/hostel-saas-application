@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.crew-container-main {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  &.default-padding {
+    padding: 2;
+  }
+
+  &.fixed-width {
+    width: 100%; 
+  }
+
+  &.fixed-width.fixed {
+    width: auto;
+    max-width: #{'${props.maxWidth / 16}rem'};
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}

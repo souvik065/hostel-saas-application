@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.time-picker-container {
+  position: relative;
+}
+
+.time-picker-wrap {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.time-picker-container.open .time-picker-wrap {
+  display: block;
+}

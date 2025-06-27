@@ -1,0 +1,93 @@
+@import '../../../styles/variables';
+.crew-pricing-card {
+  position: relative;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  width: 25rem;
+  margin: 1rem;
+  border: 0.3rem solid $secondary-dark;
+  border-radius: 2.1875rem !important;
+  padding: 6rem 6rem;
+  background: linear-gradient($primary-dark, $secondary-dark, $primary-dark);
+
+  &.dark-mode {
+    .card-title {
+      color: $primary-light;
+    }
+    .frequency-text {
+      color: $primary-light;
+    }
+    .prize-text {
+      color: $primary-light;
+    }
+  }
+  &.dark-mode {
+    .card-title {
+      color: $primary-dark;
+    }
+    .frequency-text {
+      color: $primary-dark;
+    }
+    .prize-text {
+      color: $primary-dark;
+    }
+  }
+
+  .card-title {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding-top: 0.6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6rem;
+    margin-top: 3rem;
+  }
+  .price-text {
+    font-size: 5rem !important;
+  }
+  .frequency-text {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .card-button {
+    background-color: $primary-light;
+    color: $black;
+    margin-bottom: 0.6rem;
+    margin-top: 10rem;
+    padding: 1.3rem 3rem;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0rem 0rem 1rem 0rem $tertiary-dark;
+
+    &.dark-mode {
+      color: $primary-light;
+      background-color: $primary-dark;
+    }
+
+    &.light-mode {
+      color: $primary-dark;
+      background-color: $primary-light;
+    }
+
+    &:hover {
+      box-shadow: 0rem 0rem 1rem 0rem $tertiary-dark;
+    }
+  }
+}

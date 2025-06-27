@@ -1,0 +1,103 @@
+@import '../../../styles/variables';
+@import '../../../styles/breakpoints';
+
+.crew-website-header-paper {
+  background-color: $primary-dark !important;
+}
+.drawer-bottom-header {
+  background-color: $primary-dark !important;
+  .bottom-nav {
+    .close-icon {
+      color: $primary-light !important;
+    }
+  }
+  .bottom-drawer-navitem {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .bottom-item {
+      .bottom-list-item {
+        color: $primary-light !important;
+      }
+    }
+  }
+}
+.bottom-header {
+  align-items: center;
+  justify-content: space-around;
+  background-color: $primary-dark;
+  .botton-nav-button {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .bottom-navitem {
+    flex-direction: row;
+    .bottom-list-item {
+      margin-left: 3.125rem;
+      margin-right: 3.125rem;
+      color: $primary-light;
+      font-size: 0.9rem;
+    }
+  }
+  .icon-button {
+    color: $primary-light !important;
+  }
+}
+
+.crew-icon.header-icon {
+  cursor: pointer;
+  color: $primary-light;
+}
+
+.bottom-nav {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.crew-button.contained {
+  border-radius: 0.5rem;
+  width: 20%;
+  background-color: $primary-dark !important;
+  .crew-typography.light-mode {
+    color: $primary-light;
+  }
+}
+.crew-button {
+  border: 0.13rem solid $primary-light !important;
+}
+.bottom-navitem {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .bottom-list-item {
+    font-size: 0.8rem;
+    letter-spacing: 0.01rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@include xs-breakpoint {
+  .drawer-bottom-header {
+    .bottom-nav {
+      .crew-button {
+        .crew-typography {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .bottom-drawer-navitem {
+      .bottom-item {
+        .bottom-list-item {
+          font-size: 0.6rem !important;
+        }
+      }
+    }
+  }
+}
+
+@include xxs-breakpoint {
+}

@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.link-content {
+  text-decoration: none;
+
+  &.dark-mode {
+    .text {
+      color: $primary-light;
+    }
+  }
+
+  &.light-mode {
+    .text {
+      color: $primary-dark;
+    }
+  }
+}

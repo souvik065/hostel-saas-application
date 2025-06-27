@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+  .header-icon {
+    color: $primary-dark;
+    font-size: 1.3rem;
+  }
+  
+
+.header-submenu-content {
+  .avatar-submenu-wrap .sub-menu .sub-menu-link {
+    border-bottom: 0.01rem solid transparentize($primary-dark, 0.85);
+  }
+}

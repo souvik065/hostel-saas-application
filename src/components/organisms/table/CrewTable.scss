@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+@mixin getBorderColor($radius, $type, $color) {
+  border: $radius $type $color;
+}
+.table-container {
+  padding: 1rem;
+}
+.table-page-search {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.table-edit-icon {
+  cursor: pointer;
+}
+.table-pagination-row {
+  justify-content: space-between;
+  .table-pagination-row-entries {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+.table-body-container {
+  .MuiTableRow-root {
+    @include getBorderColor(1px, solid, $customGray-main);
+  }
+  .MuiTableCell-root {
+    @include getBorderColor(1px, solid, $customGray-main);
+  }
+}

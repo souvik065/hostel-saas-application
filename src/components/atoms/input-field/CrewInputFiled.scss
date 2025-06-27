@@ -1,0 +1,83 @@
+@import '../../../styles/variables';
+
+.input-container {
+  .form-input-control {
+    width: 100%;
+    text-indent: 1rem;
+    height: 1.5rem;
+    outline: none;
+    border-radius: 0.8rem;
+    padding: 1.25rem;
+    &::placeholder {
+      padding: 0.625rem;
+    }
+    &.increased-height {
+      height: 3.25rem;
+    }
+  }
+  .complaint-text-area{
+    min-height: 7.5rem;
+  }
+  .notranslate {
+    display: none;
+  }
+
+  .input-end-icon {
+    cursor: pointer;
+  }
+  .input-error {
+    border: 1px solid $error !important;
+  }
+  .input-field-error {
+    color: $error !important;
+  }
+  .dark-mode {
+    background-color: transparent;
+    border: 0.063rem solid $primary-light;
+    color: $primary-light;
+    &.input-error {
+      box-shadow: none !important;
+    }
+    &:-webkit-autofill {
+      background-color: transparent;
+    }
+    &:focus {
+      border: 0.2rem solid $primary-light;
+    }
+    &:active {
+      border: 0.2rem solid $primary-light;
+    }
+    &:focus-within {
+      border: 0.16rem solid $primary-light;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 0.8rem 0px transparentize($primary-light, 0.5);
+    }
+  }
+
+  .light-mode {
+    background-color: transparent;
+    border: 0.063rem solid $primary-dark;
+    color: $primary-dark;
+    &.input-error {
+      box-shadow: none !important;
+    }
+    &:-webkit-autofill {
+      background-color: transparent;
+    }
+    &:focus {
+      border: 0.5rem solid $primary-dark;
+    }
+    &:active {
+      border: 0.1rem solid $primary-dark;
+    }
+    &:focus-within {
+      border: 0.16rem solid $primary-dark;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 0.8rem 0px transparentize($primary-dark, 0.5);
+    }
+  }
+}

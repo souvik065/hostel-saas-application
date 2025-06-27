@@ -1,0 +1,5 @@
+[
+  { "label": "Sports", "value": "sports" },
+  { "label": "Sponsored", "value": "sponsored" },
+  { "label": "Charity", "value": "charity" }
+]

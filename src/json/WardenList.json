@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Sri",
+    "email": "abc@gmail.com",
+    "contact": "+91 9237629387",
+    "status": "Active"
+  },
+  {
+    "id": "2",
+    "name": "Ram",
+    "email": "xyz@gmail.com",
+    "contact": "+91 9237629344",
+    "status": "Active"
+  },
+  {
+    "id": "3",
+    "name": "Devi",
+    "email": "lmn@gmail.com",
+    "contact": "+91 9237629300",
+    "status": "InActive"
+  }
+]

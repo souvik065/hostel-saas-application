@@ -1,0 +1,23 @@
+[
+  {
+    "id": "bd2d9784-90d5-4d88-a0a1-1d542b66ec70",
+    "hostelName": "Dom Test Hostel",
+    "images": [],
+    "logo": null,
+    "contactId": "24c91679-1006-46b1-9d35-675be272612f",
+    "email1": "dojovalumannel@gmail.com",
+    "email2": "",
+    "mobile1": "7907515322",
+    "mobile2": "",
+    "addressId": "1367fc6c-03b7-4ebc-966c-d88454c9ae85",
+    "address1": "Dom Test Address",
+    "address2": "",
+    "town": "",
+    "district": "",
+    "state": "",
+    "pincode": "",
+    "isActive": true,
+    "createdBy": "890290e3-849f-4c83-ba47-0b484c491daf",
+    "createdAt": "2023-12-21T09:29:19.511Z"
+  }
+]

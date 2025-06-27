@@ -1,0 +1,22 @@
+{
+    "name": "crew-web-frontend",
+    "extensions": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "prisma.vscode-graphql",
+      "kumar-harsh.graphql-for-vscode",
+      "ms-vscode.vscode-typescript-tslint-plugin",
+      "eamodio.gitlens",
+      "hoffs.vscode-versionlens"
+    ],
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "mounts": [
+      "source=crew-web-frontend-node_modules,target=/workspaces/crew-web-frontend/node_modules,type=volume",
+      "source=crew-web-frontend-public,target=/workspaces/crew-web-frontend/public,type=volume",
+      "source=crew-web-frontend-cache,target=/workspaces/crew-web-frontend/.cache,type=volume",
+      "source=crew-web-frontend-vscode-extensions,target=/root/.vscode-server/extensions,type=volume",
+    ],
+    "postCreateCommand": "direnv allow && npm install"
+  }
+  

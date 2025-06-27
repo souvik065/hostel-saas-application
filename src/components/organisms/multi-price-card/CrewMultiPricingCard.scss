@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .link-content {
+    .crew-typography {
+      .crew-button {
+        height: 3rem !important;
+      }
+    }
+  }
+
+  &.dark-mode {
+    color: $primary-light;
+  }
+
+  &.light-mode {
+    color: $primary-dark;
+  }
+}
+
+.multi-price-cards {
+  width: 100%;
+  display: flex;
+  max-height: 75%;
+  overflow-y: auto;
+  border-radius: 1rem;
+  min-width: 30rem;
+  justify-content: center;
+
+  &.dark-mode {
+    border: 2px solid transparentize($primary-light, 0.3);
+    background-color: transparentize($primary-light, 0.8);
+  }
+
+  &.light-mode {
+    background-color: $primary-light;
+  }
+}

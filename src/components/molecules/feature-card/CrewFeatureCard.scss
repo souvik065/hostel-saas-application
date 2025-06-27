@@ -1,0 +1,99 @@
+@import '../../../styles/variables';
+
+//#010034, #0033A3
+.feature-card {
+  width: 25rem;
+  border: 1px solid $secondary-main;
+  border-radius: 1.3rem;
+  background: linear-gradient(33deg,
+      $primaryDarker 20%,
+      $primaryLighter 90%);
+
+  .card-content {
+    width: 100%;
+    display: flex;
+    padding: 6rem 0rem;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .card-icon {
+      font-size: 6rem;
+      color: $white;
+      font-weight: bold;
+      margin-top: 10%;
+
+      &.dark-mode {
+        color: $white !important;
+      }
+
+      &.light-mode {
+        color: $black;
+      }
+    }
+
+    .card-heading {
+      font-size: 2.5rem;
+      color: $white;
+      font-weight: bold;
+      margin-top: 10%;
+
+      &.dark-mode {
+        color: $white;
+      }
+
+      &.light-mode {
+        color: $black;
+      }
+    }
+
+    .card-button {
+      background-color: $white;
+      color: $black;
+      margin-bottom: 0.6rem;
+      margin-top: 3rem;
+      padding: 1.3rem 3rem;
+      // max-width: 17rem;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0rem 0rem 0.5rem 0rem $secondaryLightkBorder;
+
+      &.dark-mode {
+        color: $black;
+      }
+
+      &.light-mode {
+        color: $white;
+        background-color: $primaryDark;
+      }
+
+      &:hover {
+        box-shadow: 0rem 0rem 1rem 0rem $secondaryDarkBorder;
+      }
+    }
+
+    .card-button-text {
+      font-size: 2rem;
+    }
+
+    .card-footer-text {
+      color: $white;
+      justify-content: center;
+      text-align: center;
+
+      &.dark-mode {
+        color: $white;
+      }
+
+      &.light-mode {
+        color: $black;
+      }
+    }
+  }
+
+}

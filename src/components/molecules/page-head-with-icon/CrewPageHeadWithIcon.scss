@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+
+.page-head-container-with-icon {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &.dark-mode {
+    color: $primary-contrastText;
+  }
+  &.light-mode {
+    color: $customBlack-main;
+  }
+  .page-head-label {
+    margin-left: 0.5rem;
+  }
+  .page-head-label-icon {
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .icon-right {
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .icon-left {
+    margin-right: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .divider {
+    width: 99%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+
+.dark-mode {
+  &.avatar-submenu-wrap {
+    background-color: transparentize($primary-light, 0.85);
+    backdrop-filter: blur(3.125rem);
+    box-shadow: 0rem 0rem 1.25rem 0rem $primary-dark;
+  }
+}
+.light-mode {
+  &.avatar-submenu-wrap {
+    background-color: $primary-light;
+    box-shadow: 0rem 0rem 1.25rem 0rem $primary-dark;
+  }
+}
+
+.avatar-submenu-wrap {
+  height: auto;
+  position: absolute;
+  min-width: 18rem;
+  top: 6rem;
+  right: 1%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  z-index: 10;
+
+  &.opened {
+    max-height: 20rem;
+  }
+
+  .sub-menu {
+    margin: 0.6rem;
+    padding: 1.25rem;
+
+    .sub-menu-link {
+      cursor: pointer;
+    }
+    .sub-menu-link span {
+      transition: transform 0.2s;
+    }
+    .sub-menu-link:hover span {
+      transform: translate(0.3rem);
+    }
+  }
+}

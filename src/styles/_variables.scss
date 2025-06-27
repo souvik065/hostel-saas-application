@@ -1,0 +1,94 @@
+@use 'sass:color';
+
+// Custom theme Primary colors
+$customBlue-main: #3a3f5d;
+$customBlue-light: #f4f7fe;
+$customBlue-dark: #1b2559;
+$customBlue-contrastText: #fff;
+
+$customGray-main: #797979;
+$customGray-dark: #5c5c5c;
+$customGray-light: #d2d2d2;
+$customGray-lightMain: #f5f5f5;
+$customGray-background: #eeeeee;
+$customGray-contrastText: #fff;
+
+$customBlack-main: #000;
+$customBlack-contrastText: #fff;
+
+// Theme colors
+// Theme colors
+$primary-main: #8842ff;
+$primary-contrastText: #fff;
+
+$secondary-main: #15ceda;
+$secondary-contrastText: #fff;
+
+$success-main: #4caf50;
+$success-contrastText: #fff;
+
+$warning-main: #ed6c02;
+$warning-contrastText: #fff;
+
+$info-dark-main: #172144;
+$info-main: #102042;
+$info-dark: #252b4d;
+$info-light: #3a3f5d;
+$info-contrastText: #fff;
+
+$error-main: #ef3d18;
+$error-contrastText: #fff;
+
+$action-disabled: #fff;
+
+// colors
+$color-white: #fff;
+$color-black: #000;
+
+// New Styling Variables
+$white: #fff;
+$black: #000;
+
+//primarycolors
+$primaryDarkButton: #15ceda; //button color - dark
+$primaryLightButton: #8842ff; //button color - light
+$primaryDark: #172144; //Background color - dark
+$primaryLight: $white; //Background color - light
+$primaryDarkText: $white; //text color - dark
+$primaryLightText: $black; //text color - light
+$primaryDarker: #010034; //featurecard - dark
+$primaryLighter: #00309a; //featurecard - light
+//secondarycolors
+
+$secondaryDarkBorder:#17CDDA;//border/shadow - dark
+$secondaryLightkBorder:#0e8193;//border/shadow - light
+$SecondaryDark:#3A3F5D;//Background color for input field - Dark
+$SecondaryLight:$white;//Background color for input field - Light
+$secondary-darker:#00051F;
+
+//buttondisable colors
+$buttonDisabledDark: #666666; //disabled button color - dark
+$buttonDisabledLight: #dddddd; //disabled button color - light
+
+// Final colours, All the above will be deprecated
+
+$warning: #ed6c02;
+$error: #ef3d18;
+$success: #4caf50;
+
+$primary-dark: #00051f; // rgba(0, 5, 31, 1)
+$primary-light: #fff; // rgba(255, 255, 255, 1)
+
+$primary-dark-text: transparentize($primary-light, 0.5); // rgba(255, 255, 255, 0.5);
+$primary-dark-input-bg: transparentize($primary-light, 0.8); // rgba(255, 255, 255, 0.2);
+
+$primary-light-text: transparentize($primary-dark, 0.5); //rgba(0, 5, 31, 0.5);
+$primary-light-input-bg: transparentize($primary-dark, 0.8); // rgba(255, 255, 255, 0.2);
+
+$secondary-dark: #00309a; // rgba(0, 48, 154, 1)
+$secondary-light: #fff; // rgba(255, 255, 255, 1)
+
+$tertiary-dark: #17cdda; //rgba(23, 205, 218, 1)
+
+$tertiary-light: #fff; // rgba(255, 255, 255, 1)
+
