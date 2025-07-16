@@ -17,3 +17,7 @@ It also includes **Storybook** for UI component development and documentation.
 1️⃣ **Clone the repository:**
 ```bash
 git clone https://github.com/souvik065/hostel-saas-application.git
+
+npm run storybook
+# or
+yarn storybook
